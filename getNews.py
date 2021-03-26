@@ -18,7 +18,7 @@ titles = r.html.find('.news_list.page_list > li > a')
 
 # 编写sql
 datalist = []
-sql = "insert into table_text (title,url,create_time,content,source,publishDate) values (%s,%s,%s,%s,%s,%s)"
+sql = "insert into table_text (title,url,create_time,content,source,publishDate) values (%s,%s,%s,%s,%s,%s);"
 
 # 从标题列表中循环爬取
 for title in titles:
